@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
