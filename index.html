@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/413864afe3.js"></script>
     <link type="text/css" rel="stylesheet" href="./style.css">
     <title>Your Website</title>
@@ -221,27 +220,93 @@
                 <h3 class="title">our portfolio</h3>
                 <div class="filter filter-basic">
                     <div class="filter-nav">
-                        <button class="btn btn-light btn-lg active" data-filter="">all</button>
-                        <button class="btn btn-light btn-lg" data-filter="app">app</button>
-                        <button class="btn btn-light btn-lg" data-filter="cards">card</button>
-                        <button class="btn btn-light btn-lg" data-filter="web">web</button>
+                        <button class="btn btn-light btn-lg active" data-filter="*">all</button>
+                        <button class="btn btn-light btn-lg" data-filter=".app">app</button>
+                        <button class="btn btn-light btn-lg" data-filter=".design">design</button>
+                        <button class="btn btn-light btn-lg" data-filter=".web">web</button>
                     </div>
                     <div class="projects">
                         <div class="row text-center filter-gallery">
-                            <div class="col-md-3 app item" data-category="app">
-                                <h1>app 1</h1>
+                            <div class="col-md-4 item app">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/app2.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>app 1</h3></div>
+                                </div>
                             </div>
-                            <div class="col-md-3 web item" data-category="web">
-                                <h1>web 1</h1>
+                            <div class="col-md-4 item design">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/design1-1.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>design 1</h3></div>
+                                </div>
                             </div>
-                            <div class="col-md-3 app item" data-category="app">
-                                <h1>app 2</h1>
+                            <div class="col-md-4 item web">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/web3.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>web 1</h3></div>
+                                </div>
                             </div>
-                            <div class="col-md-3 cards item" data-category="card">
-                                <h1>card 1</h1>
+                            <div class="col-md-4 item design">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/design2.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>design 2</h3></div>
+                                </div>
                             </div>
-                            <div class="col-md-3 app item" data-category="app">
-                                <h1>app 3</h1>
+                            <div class="col-md-4 item web">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/web2.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>web 2</h3></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item app">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/app1.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>app2</h3></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item app">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/blog-post7.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>app 3</h3></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item web">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/web1.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>web 3</h3></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 item design">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/design3.jpg" class="img-fluid card-img">
+                                    </div>
+
+                                    <div class="card-body text-center"><h3>design 3</h3></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,7 +432,6 @@
 
     <div style="width: 100%; height: 300px;"></div>
 
-    <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -377,5 +441,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./app.js"></script>
+    
+
 </body>
 </html>
