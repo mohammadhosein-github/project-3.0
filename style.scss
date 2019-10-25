@@ -4,24 +4,23 @@ $primary-color: #BF499A;
 
 
 
-@mixin md-size {
-    @media(max-width: 991px){
-        @content;
-    }
-}
+
 
 @mixin sm-size {
     @media(max-width: 767px){
         @content;
     }
 }
-
+@mixin md-size {
+    @media(max-width: 991px){
+        @content;
+    }
+}
 @mixin lg-size{
     @media(max-width: 1200px){
         @content;
     }
 }
-
 
 
 
@@ -45,9 +44,55 @@ h1, .logo{
 h1, h2, h3, h4, h5, h6{
     text-transform: capitalize;
 }
+a{
+    transition: 0.5s;
+}
+a:hover{
+    text-decoration: none;
+}
 .onScroll{
     padding: 10px 15px !important;
     background-color: rgba(0, 0, 0, 0.8) !important;
+}
+section{
+    width: 100%
+}
+.section-padding{
+    padding: 60px 0 40px 0;
+}
+.section-title{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111;
+    padding-bottom: 15px;
+    margin: 0 0 20px 0;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 1px;
+        background-color: #ddd;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 3px;
+        background-color: $primary-color;
+    }
+}
+.section-description{
+    color: #333;
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
 }
 
 
@@ -193,6 +238,93 @@ header{
         }
     }
 }
+
+// ------ Featured Services ------ 
+.faetured-services{
+    background-color: #000;
+    color: #fff;
+    .row{
+        .my-card{
+            padding: 30px 20px;
+            i{
+                font-size: 48px;
+                color: $primary-color;
+            }
+            h4{
+                margin: 15px 0;
+                a{
+                    font-size: 18px;
+                    color: #fff;
+                    &:hover{
+                        color: $primary-color;
+                    }
+
+                }
+            }
+            p{
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// ------ About Us ------ 
+.about-us{
+    .row{
+        .card{
+            border: none;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            .card-body{
+                position: relative;
+                padding-top: 0;
+                .my-icon{
+                    width: 64px;
+                    height: 64px;
+                    position: absolute;
+                    top: -30px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: $primary-color;
+                    border: 4px solid #fff;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s;
+                    i{
+                        color: #fff;
+                        font-size: 30px;
+                    }
+                }
+                h2{
+                    margin: 40px 0 12px 0;
+                    text-align: center;
+                    a{
+                        font-size: 20px;
+                        color: #000;
+                        font-weight: 700;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            &:hover{
+                .my-icon{
+                    background-color: #fff;
+                    i{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 
 // .carousel-indicators li {
