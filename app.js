@@ -1,8 +1,19 @@
 // ------ Navbar Background Chagne On Scroll ------
 window.onscroll = () => {
   const nav = document.querySelector('#my-navbar');
-  if(this.scrollY <= 10) nav.className = 'navbar navbar-expand-lg navbar-light bg-light fixed-top'; else nav.className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top';
+  if(this.scrollY <= 10){
+    nav.className = 'navbar navbar-expand-lg navbar-light fixed-top onTop';
+  }else{
+    nav.className = 'navbar navbar-expand-lg navbar-dark fixed-top onScroll';
+  }
 };
+
+// ------ Navbar Toggler ------
+// const navBtn = document.querySelector('.navbar-toggler');
+// const navMenu = document.querySelector('#navbarMenu');
+// navBtn.addEventListener('click', function(){
+//   navMenu.className = ''
+// });
 
 // ------ Filter Gallery ------
 const filterBtns = document.querySelectorAll('.filter-nav > button');

@@ -1,8 +1,205 @@
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900|Open+Sans:400,600,700,800&display=swap');
+
+$primary-color: #BF499A;
+
+
+
+@mixin md-size {
+    @media(max-width: 991px){
+        @content;
+    }
 }
+
+@mixin sm-size {
+    @media(max-width: 767px){
+        @content;
+    }
+}
+
+@mixin lg-size{
+    @media(max-width: 1200px){
+        @content;
+    }
+}
+
+
+
+
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+h1, .logo{
+    line-height: 1;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+h1, h2, h3, h4, h5, h6{
+    text-transform: capitalize;
+}
+.onScroll{
+    padding: 10px 15px !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+
+
+
+header{
+    nav{
+        padding: 30px 15px !important;
+        transition: all 0.5s;
+        .navbar-brand{
+            position: relative;
+            text-transform: uppercase;
+            padding-left: 60px;
+            @include md-size(){
+                padding-left: 0;
+            }
+            a{
+                color: #fff;
+                padding-left: 10px;
+                border-left: 4px solid $primary-color;
+                &:hover{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+        .navbar-toggler{
+            padding-right: 60px;
+            border: none;
+            @include sm-size(){
+                padding-right: 10px;
+            }
+            &:focus{
+                outline: none;
+            }
+            .icon-bar{
+                width: 22px;
+                border-radius: 10px;
+                height: 3px;
+                background-color: #fff;
+                margin: 4px 0;
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                padding-right: 60px;
+                @include md-size(){
+                    padding-right: 0;
+                }
+                .nav-item{
+                    margin-left: 10px;
+                    .nav-link{
+                        font-size: 13px;
+                        padding: 0 8px 10px 8px;
+                        font-weight: 700;
+                        color: #fff;
+                        text-transform: uppercase;
+                        &.active{
+                            color: $primary-color;
+                        }
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+
+                }
+            }
+            @include md-size(){
+                
+            }
+        }
+        
+    }
+}
+
+#home{
+    .carousel-inner{
+        .carousel-item{
+            position: relative;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+            .carousel-caption{
+                display: flex !important;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h2{
+                    font-size: 48px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                    @include sm-size(){
+                        font-size: 28px;
+                    }
+                }
+                p{
+                    width: 60%;
+                    margin-bottom: 30px;
+                    @include md-size(){
+                        width: 80%;
+                    }
+                }
+                .slider-btn{
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 16px;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    padding: 8px 32px;
+                    margin: 10px;
+                    background-color: $primary-color;
+                    border-radius: 50px;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $primary-color;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev, .carousel-control-next{
+            width: 5%;
+            @include md-size(){
+                width: 10%;
+            }
+        }
+    }
+}
+
+
+// .carousel-indicators li {
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+// }
 
 .filter-nav button{
     border: 1px solid #000;
