@@ -292,6 +292,25 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   margin: 0;
 }
 
+.about-us {
+  position: relative;
+}
+
+.about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg-image3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
 .about-us .row .card {
   border: none;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
@@ -354,6 +373,47 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
 }
 
 .about-us .row .card:hover .my-icon i {
+  color: #BF499A;
+}
+
+.services .row {
+  position: relative;
+}
+
+.services .row .my-card {
+  margin-bottom: 30px;
+}
+
+.services .row .my-card .text-area {
+  margin-left: 60px;
+}
+
+.services .row .my-card .text-area h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .row .my-card .text-area p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.services .row .my-card .my-icon {
+  position: relative;
+}
+
+.services .row .my-card .my-icon i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #BF499A;
+  font-size: 36px;
+}
+
+.services .row .my-card:hover h4 {
   color: #BF499A;
 }
 
