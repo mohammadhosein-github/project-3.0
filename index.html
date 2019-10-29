@@ -255,57 +255,88 @@
     </section>
 
     <!-- ****** Call To Action ****** -->
-    <section>
+    <section class="cta section-padding">
         <div class="container text-center">
             <h3>call to action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="btn btn-primary btn-lg">call to action</a>
+            <p class="section-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="my-btn">call to action</a>
         </div>
     </section>
 
     <!-- ****** Our Skills ****** -->
-    <section>
+    <section class="our-skills section-padding">
         <div class="container">
             <div class="col-12 text-center">
-                <h3 class="title">Our skills</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h3 class="section-title">Our skills</h3>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="skills-section">
                 <div class="progress" style="height: 35px;">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <span class="text-left">HTML<i class="text-right">100%</i></span>
+                        
+                    </div>
+                </div>
+                <div class="progress" style="height: 35px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <span class="text-left">CSS<i class="text-right">90%</i></span>
+                        
+                    </div>
+                </div>
+                <div class="progress" style="height: 35px;">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <span class="text-left">JAVASCRIPT<i class="text-right">75%</i></span>
+                        
+                    </div>
+                </div>
+                <div class="progress" style="height: 35px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <span class="text-left">PHOTOSHOP<i class="text-right">55%</i></span>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ****** Facts ****** -->
-    <section>
-        <div class="container">
-            <div class="text-center">
-                <h3 class="title">facts</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </div>
+    <section class="facts section-padding">
+        <div class="container text-center">
+            <h3 class="section-title">facts</h3>
+            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
             <div class="row text-center">
-                <div class="col-6 col-md-4">
-                    <span class="number">274</span>
+                <div class="col-6 col-lg-3">
+                    <span>274</span>
                     <p>clients</p>
                 </div>
+                <div class="col-6 col-lg-3">
+                    <span>182</span>
+                    <p>projects</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <span>483</span>
+                    <p>hours of support</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <span>14</span>
+                    <p>hard works</p>
+                </div>
             </div>
-            <img src="../images/image3.jpg" class="img-fluid">
+            <img src="../images/pj7.png" class="img-fluid">
         </div>
     </section>
 
     <!-- ****** Our Portfolio ****** -->
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio section-padding bg-light">
         <div class="container">
             <div class="col-12 text-center">
-                <h3 class="title">our portfolio</h3>
+                <h3 class="section-title">our portfolio</h3>
                 <div class="filter filter-basic">
                     <div class="filter-nav">
-                        <button class="btn btn-light btn-lg active" data-filter="*">all</button>
-                        <button class="btn btn-light btn-lg" data-filter=".app">app</button>
-                        <button class="btn btn-light btn-lg" data-filter=".design">design</button>
-                        <button class="btn btn-light btn-lg" data-filter=".web">web</button>
+                        <button class="my-btn active" data-filter="*">all</button>
+                        <button class="my-btn" data-filter=".app">app</button>
+                        <button class="my-btn" data-filter=".design">design</button>
+                        <button class="my-btn" data-filter=".web">web</button>
                     </div>
                     <div class="projects">
                         <div class="row text-center filter-gallery">
@@ -313,81 +344,144 @@
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/app2.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>app 1</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">app 1</a></h3>
+                                        <p>app</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item design">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/design1-1.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>design 1</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">design 1</a></h3>
+                                        <p>design</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item web">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/web3.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>web 1</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">web 1</a></h3>
+                                        <p>web</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item design">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/design2.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>design 2</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">design 2</a></h3>
+                                        <p>design</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item web">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/web2.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>web 2</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">web 2</a></h3>
+                                        <p>web</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item app">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/app1.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>app2</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">app 2</a></h3>
+                                        <p>app</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item app">
                                 <div class="card">
                                     <div class="card-head">
-                                        <img src="../images/blog-post7.jpg" class="img-fluid card-img">
+                                        <img src="../images/blog-post1.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>app 3</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">app 3</a></h3>
+                                        <p>app</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item web">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/web1.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>web 3</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">web 3</a></h3>
+                                        <p>web</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 item design">
                                 <div class="card">
                                     <div class="card-head">
                                         <img src="../images/design3.jpg" class="img-fluid card-img">
+                                        <div class="icon-container">
+                                            <a href="#" class="first"><span class="fa fa-eye"></span></a>
+                                            <a href="#"><span class="fa fa-external-link-alt"></span></a>
+                                        </div>
                                     </div>
 
-                                    <div class="card-body text-center"><h3>design 3</h3></div>
+                                    <div class="card-body text-center">
+                                        <h3><a href="#">design 3</a></h3>
+                                        <p>design</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
