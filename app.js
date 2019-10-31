@@ -1,12 +1,24 @@
 // ------ Navbar Background Chagne On Scroll ------
-window.onscroll = () => {
-  const nav = document.querySelector('#my-navbar');
-  if(this.scrollY <= 10){
-    nav.className = 'navbar navbar-expand-lg navbar-light fixed-top onTop';
-  }else{
-    nav.className = 'navbar navbar-expand-lg navbar-dark fixed-top onScroll';
-  }
-};
+// window.onscroll = () => {
+//   const nav = document.querySelector('#my-navbar');
+//   if(this.scrollY <= 10){
+//     nav.className = 'navbar navbar-expand-lg navbar-light fixed-top';
+//   }else{
+//     nav.className = 'navbar navbar-expand-lg navbar-dark fixed-top onScroll';
+//   }
+// };
+
+$(function(){
+	var navbar = $('#my-navbar');
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() <= 40){
+			navbar.removeClass('onScroll');
+		} else {
+			navbar.addClass('onScroll');
+		}
+	});
+});
 
 // ------ Navbar Toggler ------
 // const navBtn = document.querySelector('.navbar-toggler');
@@ -47,7 +59,12 @@ $(function () {
 
 });
 
-
+var offset = 72;
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
 
 
 

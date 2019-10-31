@@ -11,7 +11,7 @@
     <title>Your Website</title>
     
 </head>
-<body data-spy="scroll" data-target="#my-navbar" data-offset="0">
+<body>
 
     <header>
         <nav id="my-navbar" class="navbar navbar-expand-md navbar-light fixed-top">
@@ -493,69 +493,152 @@
     </section>
 
     <!-- ****** Our Clients ****** -->
-    <section>
+    <section class="section-padding clients">
         <div class="container">
             <div class="col-12 text-center">
-                <h3 class="title">our clients</h3>
+                <h3 class="section-title">our clients</h3>
             </div>
             <div class="row text-center">
-                <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="col-6 col-md-2 col-lg-2 align-self-center">
                     <img src="../images/logo1.png" style="width: 100%;">
+                </div>
+                <div class="col-6 col-md-2 col-lg-2 align-self-center">
+                    <img src="../images/logo/yahoo.png" style="width: 100%;">
+                </div>
+                <div class="col-6 col-md-2 col-lg-2 align-self-center">
+                    <img src="../images/logo/ibm.png" style="width: 100%;">
+                </div>
+                <div class="col-6 col-md-2 col-lg-2 align-self-center">
+                    <img src="../images/logo/coca-cola.png" style="width: 100%;">
+                </div>
+                <div class="col-6 col-md-2 col-lg-2 align-self-center">
+                    <img src="../images/logo/bbc.png" style="width: 100%;">
+                </div>
+                <div class="col-6 col-md-2 col-lg-2 align-self-center">
+                    <img src="../images/logo/puma.png" style="width: 100%;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ****** Testimonials ****** -->
-    <section>
+    <section class="section-padding bg-light testimonials">
         <div class="container">
             <div class="col-12 text-center">
-                <h3 class="title">testimonials</h3>
+                <h3 class="section-title">testimonials</h3>
             </div>
             <div id="t-carousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#t-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#t-carousel" data-slide-to="1"></li>
-                    <li data-target="#t-carousel" data-slide-to="2"></li>
-                    <li data-target="#t-carousel" data-slide-to="3"></li>
-                    <li data-target="#t-carousel" data-slide-to="4"></li>
-                    <li data-target="#t-carousel" data-slide-to="5"></li>
-                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item text-center active">
-                        <div class="profile-photo"></div>
-                        <h3>sara wilsson</h3>
+                        <div class="profile-photo">
+                            <img src="../images/female-profile4.jpg" class="img-fluid">
+                        </div>
+                        <h3>emma allen</h3>
                         <h4>designer</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem nemo obcaecati rem, eligendi reprehenderit ex voluptatem. Dolorum nam beatae eaque numquam doloremque in, aliquam omnis nostrum odio veniam quos.</p>
                     </div>
                     <div class="carousel-item text-center">
-                        <h1>second slide</h1>
+                            <div class="profile-photo">
+                                <img src="../images/male-profile2.jpg" class="img-fluid">
+                            </div>
+                            <h3>mark ray</h3>
+                            <h4>store owner</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem nemo obcaecati rem, eligendi reprehenderit ex voluptatem. Dolorum nam beatae eaque numquam doloremque in, aliquam omnis nostrum odio veniam quos.</p>
                     </div>
                     <div class="carousel-item text-center">
-                        <h1>third slide</h1>
+                            <div class="profile-photo">
+                                <img src="../images/female-profile3.jpg" class="img-fluid">
+                            </div>
+                            <h3>sara wilsson</h3>
+                            <h4>freelancer</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem nemo obcaecati rem, eligendi reprehenderit ex voluptatem. Dolorum nam beatae eaque numquam doloremque in, aliquam omnis nostrum odio veniam quos.</p>
                     </div>
                     <div class="carousel-item text-center">
-                        <h1>fourth slide</h1>
-                    </div>
-                    <div class="carousel-item text-center">
-                        <h1>fifth slide</h1>
+                            <div class="profile-photo">
+                                <img src="../images/male-profile4.jpg" class="img-fluid">
+                            </div>
+                            <h3>thomas foster</h3>
+                            <h4>developer</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quidem nemo obcaecati rem, eligendi reprehenderit ex voluptatem. Dolorum nam beatae eaque numquam doloremque in, aliquam omnis nostrum odio veniam quos.</p>
                     </div>
                 </div>
+                <ol class="carousel-indicators" style="padding: 0; margin: 0;"> 
+                    <li data-target="#t-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#t-carousel" data-slide-to="1"></li>
+                    <li data-target="#t-carousel" data-slide-to="2"></li>
+                    <li data-target="#t-carousel" data-slide-to="3"></li>
+                </ol>
+    
             </div>
         </div>
     </section>
 
     <!-- ****** Team ****** -->
-    <section id="team">
+    <section id="team" class="section-padding2 team">
         <div class="container">
             <div class="col-12 text-center">
-                <h3 class="title">team</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                <h3 class="section-title">team</h3>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
             </div>
             <div class="row text-center">
                 <div class="col-md-6 col-lg-3">
                     <div class="my-cards">
-                        <img src="../images/male-profile1.jpg" alt="profile" width="100%">
+                        <img src="../images/profile/man/squer3.jpg" alt="profile" width="100%">
+                        <div class="text-area">
+                            <h4>jake lee</h4>
+                            <span>head developer</span>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="my-cards">
+                        <img src="../images/profile/woman/squer1.jpg" alt="profile" width="100%">
+                        <div class="text-area">
+                            <h4>rose watson</h4>
+                            <span>head designer</span>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="my-cards">
+                        <img src="../images/profile/man/squer1.jpg" alt="profile" width="100%">
+                        <div class="text-area">
+                            <h4>lucas clark</h4>
+                            <span>human resources</span>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="my-cards">
+                        <img src="../images/profile/woman/squer2.jpg" alt="profile" width="100%">
+                        <div class="text-area">
+                            <h4>emmily potts</h4>
+                            <span>CTO</span>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -563,28 +646,48 @@
     </section>
 
     <!-- ****** Contact Us ****** -->
-    <section id="contact">
+    <section id="contact" class="section-padding2 bg-light contact">
         <div class="container">
             <div class="col-12 text-center">
-                <h3 class="title">contact us</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                <h3 class="section-title">contact us</h3>
+                <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <div class="side-card">
-                        <i class="fa fa-location"></i>
+                    <div class="my-card">
+                        <i class="fa fa-map-marker-alt"></i>
                         <h3>address</h3>
-                        <p>A108 Adam Street, NY 535022, USA</p>
+                        <address>A108 Adam Street, NY 535022, USA</address>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="my-card middle">
+                        <i class="fa fa-phone-alt"></i>
+                        <h3>phone number</h3>
+                        <address>+1 5589 55431 88</address>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="my-card">
+                        <i class="fa fa-envelope"></i>
+                        <h3>email</h3>
+                        <address>info@example.com</address>
                     </div>
                 </div>
             </div>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Message"></textarea>
+            <form class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Your Name" class="form-control name">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" placeholder="Your Email" class="form-control email">
+                    </div>
+                </div>
+                <input type="text" placeholder="Subject" class="form-control subject">
+                <textarea placeholder="Message" rows="3" class="form-control message"></textarea>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">send message</button>
+                    <button type="submit" class="my-btn">send message</button>
                 </div>
             </form>
         </div>
@@ -593,20 +696,74 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <h1>logo</h1>
+                <div class="col-md-6 col-lg-3 first-col">
+                    <h3>logo</h3>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 second-col">
+                    <h4>useful links</h4>
+                    <ul>
+                        <li>
+                            <span class="fa fa-angle-right"></span>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-angle-right"></span>
+                            <a href="#">about us</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-angle-right"></span>
+                            <a href="#">services</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-angle-right"></span>
+                            <a href="#">terms of services</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-angle-right"></span>
+                            <a href="#">privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 third-col">
+                    <h4>contact us</h4>
+                    <p>
+                        A108 Adam Street
+                        <br>
+                        New York, NY 535022
+                        <br>
+                        United States
+                        <br>
+                        <span>Phone: </span>+1 5589 55488 55
+                        <br>
+                        <span>Email: </span>info@example.com
+                    </p>
+                    <div class="icons">
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-google-plus-g"></span></a>
+                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fourth-col">
+                    <h4>our newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                    <div class="subscribe">
+                        <input type="email">
+                        <input type="submit" value="Subscribe"></input>
+                    </div>
                 </div>
             </div>
             <div class="cr text-center">
-                <p>&copy; copyright thomas miller. all rights reserved</p>
-                designed by <span>bootstrapMade</span>
+                <p>&copy; copyright <strong>thomas miller</strong>. all rights reserved</p>
+                Designed by <span>BootstrapMade</span>
             </div>
         </div>
     </footer>
 
 
 
-    <div style="width: 100%; height: 300px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
