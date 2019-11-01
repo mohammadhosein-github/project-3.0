@@ -432,7 +432,6 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
 
 .cta {
   position: relative;
-  padding: 60px 0;
 }
 
 .cta::before {
@@ -550,10 +549,6 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   margin-top: 20px;
 }
 
-.portfolio {
-  padding: 60px 0;
-}
-
 .portfolio .filter-nav {
   margin: 5px 0 35px 0;
 }
@@ -662,10 +657,6 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   text-transform: uppercase;
 }
 
-.clients {
-  padding: 60px 0;
-}
-
 .clients img {
   opacity: 0.4;
   -webkit-transition: 0.2s;
@@ -674,10 +665,6 @@ header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
 
 .clients img:hover {
   opacity: 1;
-}
-
-.testimonials {
-  padding: 60px 0;
 }
 
 .testimonials .section-title {

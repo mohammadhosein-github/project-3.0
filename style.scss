@@ -387,7 +387,6 @@ header{
 // ------ Call to Action ------
 .cta{
     position: relative;
-    padding: 60px 0;
     &::before{
         content: '';
         position: absolute;
@@ -498,7 +497,6 @@ header{
 
 // ------ Our Portfolio ------
 .portfolio{
-    padding: 60px 0;
     .filter-nav{
         margin: 5px 0 35px 0;
         .my-btn{
@@ -589,7 +587,6 @@ header{
 
 // ------ Our Clients ------
 .clients{
-    padding: 60px 0;
     img{
         opacity: 0.4;
         transition: 0.2s;
@@ -601,7 +598,6 @@ header{
 
 // ------ testimonials ------
 .testimonials{
-    padding: 60px 0;
     .section-title{
         margin-bottom: 40px;
     }
