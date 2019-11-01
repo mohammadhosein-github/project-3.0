@@ -1,13 +1,4 @@
 // ------ Navbar Background Chagne On Scroll ------
-// window.onscroll = () => {
-//   const nav = document.querySelector('#my-navbar');
-//   if(this.scrollY <= 10){
-//     nav.className = 'navbar navbar-expand-lg navbar-light fixed-top';
-//   }else{
-//     nav.className = 'navbar navbar-expand-lg navbar-dark fixed-top onScroll';
-//   }
-// };
-
 $(function(){
 	var navbar = $('#my-navbar');
 	
@@ -20,18 +11,27 @@ $(function(){
 	});
 });
 
-// ------ Navbar Toggler ------
-// const navBtn = document.querySelector('.navbar-toggler');
-// const navMenu = document.querySelector('#navbarMenu');
-// navBtn.addEventListener('click', function(){
-//   navMenu.className = ''
-// });
+// ------ Navbar Collapse ------
+var collapseBtn = document.querySelector('.navbar-toggler');
+var navSection = document.querySelector('nav');
+collapseBtn.addEventListener('click', function(){
+  navSection.classList.toggle('onScroll');
+})
+
+// ------ Navbar Offset ------
+var offset = 72;
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
+});
+
 
 // ------ Filter Gallery ------
-const filterBtns = document.querySelectorAll('.filter-nav > button');
+var filterBtns = document.querySelectorAll('.filter-nav > button');
 for(const cur of filterBtns){
   cur.addEventListener('click', function(){
-    for(const elem of filterBtns){
+    for(var elem of filterBtns){
       elem.classList.remove('active');
     }
     cur.classList.add('active');
@@ -59,11 +59,6 @@ $(function () {
 
 });
 
-var offset = 72;
-$('.navbar li a').click(function(event) {
-    event.preventDefault();
-    $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -offset);
-});
+
 
 
