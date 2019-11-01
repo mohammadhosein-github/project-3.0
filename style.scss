@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900|Open+Sans:400,600,700,800&display=swap');
 
+
+
+
+
 $primary-color: #BF499A;
-
-
-
-
 
 @mixin sm-size {
     @media(max-width: 767px){
@@ -920,14 +920,3 @@ footer{
         }
     }
 }
-
-
-
-
-
-
-// .carousel-indicators li {
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 50%;
-// }

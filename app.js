@@ -59,16 +59,11 @@ $(function () {
 
 });
 
-// var offset = 72;
-// $('.navbar li a').click(function(event) {
-//     event.preventDefault();
-//     $($(this).attr('href'))[0].scrollIntoView();
-//     scrollBy(0, -offset);
-// });
-$('#my-navbar').affix({
-  offset: {
-      top: $('#my-navbar').offset().top
-  }
+var offset = 72;
+$('.navbar li a').click(function(event) {
+    event.preventDefault();
+    $($(this).attr('href'))[0].scrollIntoView();
+    scrollBy(0, -offset);
 });
 
 
