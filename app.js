@@ -15,7 +15,7 @@ $(function(){
 var collapseBtn = document.querySelector('.navbar-toggler');
 var navSection = document.querySelector('nav');
 collapseBtn.addEventListener('click', function(){
-  navSection.classList.toggle('onScroll');
+  navSection.classList.toggle('my-collapse');
 })
 
 // ------ Navbar Offset ------

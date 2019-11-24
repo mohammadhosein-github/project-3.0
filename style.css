@@ -41,6 +41,11 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
+.my-collapse {
+  padding: 10px 15px !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
 section {
   width: 100%;
 }
